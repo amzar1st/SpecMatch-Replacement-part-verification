@@ -1,0 +1,27 @@
+{
+  "schema": "specmatch/1",
+  "profile": "3v3-8avg-1hz",
+  "parts": {
+    "TMP117": {
+      "revision": "Rev. D",
+      "source": "https://www.ti.com/lit/ds/symlink/tmp117.pdf",
+      "rows": [
+        [-20, 50, 100, "mC", "§6.5 TMP117, −20 °C to 50 °C"],
+        [-40, 70, 150, "mC", "§6.5 TMP117, −40 °C to 70 °C"],
+        [-40, 100, 200, "mC", "§6.5 TMP117, −40 °C to 100 °C"],
+        [-55, 125, 250, "mC", "§6.5 TMP117, −55 °C to 125 °C"],
+        [-55, 150, 300, "mC", "§6.5 TMP117, −55 °C to 150 °C"]
+      ]
+    },
+    "TMP116": {
+      "revision": "SBOS740A",
+      "source": "https://www.ti.com/lit/ds/sbos740a/sbos740a.pdf#page=5",
+      "rows": [
+        [-10, 85, 200, "mC", "§6.5 TMP116, 3.3 V, −10 °C to 85 °C; footnote 1"],
+        [-40, 105, 250, "mC", "§6.5 TMP116, 3.0–3.6 V, −40 °C to 105 °C; footnote 1"],
+        [105, 125, 300, "mC", "§6.5 TMP116, 3.0–3.6 V, 105 °C to 125 °C; footnote 1"],
+        [-55, -40, 750, "mC", "§6.5 TMP116, footnotes 1–2, −55 °C to −40 °C"]
+      ]
+    }
+  }
+}
