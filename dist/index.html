@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Compare replacement temperature sensors against a locked procurement checklist.">
+<title>SpecMatch · Replacement part verification</title>
+<link rel="stylesheet" href="./style.css">
+<script type="module" src="./app.mjs"></script>
+</head>
+<body>
+<header><div class="shell bar"><a class="brand" href="./">▧ <b>SpecMatch</b></a><a href="https://studio.genlayer.com/run-debug">GenLayer Studio ↗</a></div></header>
+<main class="shell">
+<div class="hero"><div><p class="eyebrow">COMPONENT VERIFICATION</p><h1>Does the replacement<br>meet the spec?</h1><p>Compare manufacturer guarantees against the buyer’s operating range. Open the decisive datasheet rows behind each result.</p></div><div class="profile"><span>TEST PROFILE</span><strong>Digital temperature sensors</strong><p>3.3 V · 8 averages · 1 Hz</p></div></div>
+<section aria-labelledby="results-heading"><div class="section-head"><div><h2 id="results-heading">Sensor comparison</h2><p id="mode">Datasheet preview</p></div><label>Buyer checklist <select id="preset"><option value="wide">Cold-start range</option><option value="narrow">Indoor range</option><option value="gap">Extended range</option></select></label></div>
+<div id="results" class="grid" aria-live="polite"></div></section>
+<section class="chain" aria-labelledby="chain-heading">
+<h2 id="chain-heading">Studionet records</h2><p>Read finalized reviews or track a transaction submitted with Studio’s built-in account.</p>
+<form id="read"><label>Contract address <input id="address" required pattern="0x[0-9a-fA-F]{40}" placeholder="0x…" spellcheck="false"></label><label>Checklist ID <input id="checklist" required value="cold-start" pattern="[a-z0-9-]{3,32}"></label><label>Evidence commit <input id="commit" required pattern="[0-9a-f]{40}" spellcheck="false"></label><button>Load finalized reviews</button></form>
+<form id="track"><label>Transaction hash <input id="hash" required pattern="0x[0-9a-fA-F]{64}" placeholder="0x…" spellcheck="false"></label><button>Track transaction</button></form>
+<p id="chain-status" role="status" aria-live="polite"></p>
+</section>
+</main><footer class="shell"><a href="https://github.com/amzar1st/SpecMatch-Replacement-part-verification">Source and evidence ↗</a><span>Datasheet limits apply under the stated test conditions.</span></footer>
+</body></html>
